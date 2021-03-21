@@ -1,0 +1,61 @@
+##################################################################################
+### VENDOR_EDIT, OEM All rights reserved.
+###
+### File: - init.oem.minidump.sdx55m.rc
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### kimmy.yang@oneplus.com          2020/04/22   v1          provide the permission
+### kimmy.yang@oneplus.com          2020/08/05   v1.1        Add new ELF for CR upgraded
+### ------------------------------------------------------------------------------
+##################################################################################
+
+
+##################################  Trigger Point Begin ###########################################
+
+on property:persist.sys.oem.minidump_chmod=1
+    chmod 0770 /mnt/vendor/modemdump/SDX55M
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/load.cmm
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_AMSS_HEAP_0.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_0.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_1.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_10.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_11.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_12.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_2.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_3.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_4.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_5.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_6.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_7.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_8.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_GEN_DUMP_9.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_INT_HEAP_0.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_INT_HEAP_1.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_MDMP_LOG.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_MDMP_LOG1.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_MPSS_HEAP_0.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_MPSS_HEAP_1.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_MPSS_INT_HEA.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_MPSS_VAR_TAB.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_mss_key_aes.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_mss_key_iv.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_mss_key_mac.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_PBUS_LOG.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_PMIC_PON.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_PMON_HIS.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_QSH_MDUMP.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_RST_STAT.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_SHRDIMEM.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_SMEM_VER.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/MD_SMEMINFO.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_TZ_DIAG.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_PBUS_LOG.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_PMIC_PON.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_PMON_HIS.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_RST_STAT.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_SHRDIMEM.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_SMEM_VER.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_SMEMINFO.BIN
+    chmod 0660 /mnt/vendor/modemdump/SDX55M/md_mss_compr_ar.BIN
+    setprop persist.sys.oem.minidump_chmod 0
